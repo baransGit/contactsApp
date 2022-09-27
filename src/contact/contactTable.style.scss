@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
+
+$fuscia: #e84b99;
+$white: white;
+
+@function rem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  background: blue;
+  color: $white;
+  padding: rem(20px);
+}
+
+.grid {
+  display: grid;
+  gap: rem(40px);
+
+  @media (min-width: 50rem) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.col {
+  padding: rem(20px);
+  border: 1px solid #ffffff66;
+}
+
+.contact-list {
+  font-weight: 700;
+  display: grid;
+  grid-template-columns: minmax(0, max-content);
+
+  > * + * {
+    margin-top: rem(20px);
+  }
+}
+
+.c-icon-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: yellowgreen;
+  background-color: $white;
+  padding: rem(5px) rem(5px) rem(5px) rem(25px);
+  border-radius: 999px;
+  transition: color 200ms;
+  justify-content: flex-start;
+
+  &:hover,
+  &:focus {
+    color: $fuscia;
+  }
+}
+
+.c-icon-button__label {
+  margin-right: rem(10px);
+}
