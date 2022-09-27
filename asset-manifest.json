@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/contactsApp/static/css/main.11e70e8d.css",
+    "main.js": "/contactsApp/static/js/main.54b9406d.js",
+    "index.html": "/contactsApp/index.html",
+    "main.11e70e8d.css.map": "/contactsApp/static/css/main.11e70e8d.css.map",
+    "main.54b9406d.js.map": "/contactsApp/static/js/main.54b9406d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.11e70e8d.css",
+    "static/js/main.54b9406d.js"
+  ]
+}
